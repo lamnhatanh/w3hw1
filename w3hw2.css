@@ -1,0 +1,248 @@
+/* reset default */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background: #000;
+}
+
+.header-icon {
+    padding: 8px 16px;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.header-icon:hover{
+    color: #000;
+    background: #ccc;
+}
+
+.search-icon {
+  padding: 8px 16px;
+}
+
+.search-icon:hover{
+    color: #000;
+    background: #ccc;
+}
+
+/* Jane Bloglife part */
+.jane-bloglife {
+    padding: 48px 16px;
+    text-align: center;
+}
+
+.jane-bloglife p{
+    font-weight: 500;
+}
+
+.jane-bloglife span{
+    color: #fff;
+    background: #000;
+}
+
+/* Fashion blog part */
+.fashion-blog-container img{
+    max-width: 100%;
+}
+
+.fashion-blog-container{
+    position: relative;
+}
+
+.text-container h1{
+    color: burlywood;
+    margin: 10px 0;
+}
+
+.text-container{
+    position: absolute;
+    top: 0;
+    padding: 12px 24px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container .subscribe-button{
+    color: #000;
+    background: #fff;
+    opacity: 0.6;
+    border-radius: 0;
+    padding: 12px 24px;
+    border: 0;
+    width: fit-content;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.text-container .subscribe-button:hover{
+    background: #ccc;
+    color: #000;
+    opacity: 1;
+}
+
+/* Modal */
+#modal-header{
+    display: flex;
+    flex-direction: column-reverse;   
+    align-items: flex-start;
+}
+
+#modal-header button{
+    padding: 8px 16px;
+}
+
+.modal-body input{
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0;
+}
+
+.modal-body button{
+    width: 100%;
+    padding: 12px 24px;
+    margin-bottom: 16px;
+    border: none;
+    background: #f44336;
+    color: #fff;
+}
+
+.modal-body button:hover{
+    background: #ccc;
+    color: #000;
+}
+
+
+/* article part */
+.article-container{
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles{
+    width: 66%;
+}
+
+/* middle article */
+
+/* first */
+.first-article{
+    margin: 16px;
+    padding: 12px 24px;
+}
+
+.title-part{
+    text-align: center;
+}
+
+.title-part h3{
+    margin: 10px 0;
+}
+
+.title-part h5{
+    margin: 10px 0;
+}
+
+.content img{
+    padding: 16px 0;
+    width: 100%;
+}
+
+.content p{
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.buttons .like{
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.buttons .like:hover{
+    background: #ccc;
+}
+
+.buttons .btn{
+    padding: 8px 16px;
+    border-radius: 0;
+    height: fit-content;
+    background: #000;
+}
+
+.buttons .btn:hover{
+    background: #ccc;
+    color: #000;
+}
+
+.buttons .btn span{
+    display: inline-block;
+    padding: 0 7px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.collapse{
+    margin-bottom: 16px;
+}
+
+.collapse .card{
+    border: none;
+    border-top: 1px solid;
+    margin-top: 20px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.reply-img{
+    display: block;
+    width: 16%;
+}
+
+.reply-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    width: 83%;
+}
+
+/* side column */
+.side-column{
+    width: 33%;
+}
+
+.myname-container{
+    margin: 16px;
+    display: block;
+}
+
+.myname-container img{
+    width: 100%;
+}
+
+.myname-container .text{
+    padding: 0 16px;
+    color: #fff;
+    background: #000;
+}

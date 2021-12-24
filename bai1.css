@@ -1,0 +1,61 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.email, .password{
+    width: 192px;
+}
+
+.create-account{
+    text-align: end;
+}
+
+
+h4{
+    text-align: center;
+}
+
+div {
+    padding-top: 10px;
+}
+
+
+.forgot {
+    color: rgb(0, 132, 255);
+    text-align: end;
+}
+
+
+
+span {
+    color: rgb(0, 132, 255);
+}
+
+.button1 {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border-radius: 3px;
+}
+
+.button1:hover {
+    background-color: yellowgreen;
+}
+
+.button2 {
+    width: 200px;
+    height: 30px;
+    background: #3B5998;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+}

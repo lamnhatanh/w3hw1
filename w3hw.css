@@ -20,6 +20,10 @@
     width: 500px;
 }
 
+.features-link{
+    text-decoration: none;
+}
+
 /* img-slide */
 .chicago-img{
     position: relative;
