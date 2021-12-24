@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+.general-container{
+    max-width: 1600px;
+    margin: auto;
+}
+
 /* navigation */
 nav {
   display: flex;
@@ -51,7 +56,7 @@ nav {
 
 /* Fashion blog part */
 .fashion-blog-container img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .fashion-blog-container{
@@ -129,22 +134,29 @@ nav {
     padding: 8px 16px;
     display: flex;
     justify-content: space-between;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
 }
 
 .articles{
-    width: 66%;
+    width: 66.66%;
 }
 
 /* middle article */
 
 /* first */
-.first-article{
+.single-article{
     margin: 16px;
     padding: 12px 24px;
+    background: #fff;
 }
 
 .title-part{
     text-align: center;
+}
+
+.title-part span{
+    opacity: 0.60;
 }
 
 .title-part h3{
@@ -163,6 +175,10 @@ nav {
 .content p{
     margin: 15px 0;
     text-align: justify;
+}
+
+.content p span{
+    font-weight: 500;
 }
 
 .buttons{
@@ -188,6 +204,11 @@ nav {
     background: #000;
 }
 
+.buttons .btn:focus{
+    background: #ccc;
+    color: #000;
+}
+
 .buttons .btn:hover{
     background: #ccc;
     color: #000;
@@ -211,27 +232,42 @@ nav {
     margin-top: 20px;
     border-radius: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .reply-img{
-    display: block;
+    display: inline-block;
     width: 16%;
 }
 
+.reply-img img{
+    width: 90px;
+}
+
+.reply-content{
+    display: inline-block;
+}
+
 .reply-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: small;
+    display: inline-block;
+    vertical-align: middle;
     width: 83%;
+    font-size: 15px;
+}
+
+.reply-text span{
+    opacity: 0.60;
+    font-size: 15px;
 }
 
 /* side column */
 .side-column{
-    width: 33%;
+    width: 33.33%;
 }
 
+/* MyName-part */
 .myname-container{
     margin: 16px;
     display: block;
@@ -239,10 +275,123 @@ nav {
 
 .myname-container img{
     width: 100%;
+    filter: grayscale(75%);
 }
 
 .myname-container .text{
     padding: 0 16px;
     color: #fff;
     background: #000;
+}
+
+/* Popular Posts */
+.post-container{
+    margin: 16px;
+}
+
+.post-title{
+    padding: 8px 16px;
+    color: #fff;
+    background: #000;
+}
+
+.post-title h4{
+    margin: 10px 0;
+}
+
+.post-content{
+    background: #fff;
+}
+
+.post{
+    padding: 16px;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.post img{
+    width: 16%;
+    height: fit-content;
+    display: inline-block;
+    margin-right: 16px;
+    text-align: center;
+}
+
+.post .text{
+    width: 83%;
+    display: inline-block;
+}
+
+.post .text p{
+    margin: 0;
+}
+
+
+/* Ads */
+.ads-container{
+    margin: 16px;
+    background: #fff;
+}
+
+.ads-container .title{
+    padding: 8px 16px;
+    color: #fff;
+    background: #000;
+}
+
+.ad-content{
+    padding: 0 16px;
+    background: #fff;
+    display: flex;
+}
+
+.ad{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 1px 16px;
+    width: 100%;
+    background: #f1f1f1;
+}
+
+.ad .text{
+    text-align: center;
+    line-height: 200px;
+}
+
+/* ===========footer========== */
+footer{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #616161;
+}
+
+.a-button{
+    text-decoration: none;
+}
+
+footer i{
+    margin-right: 16px;
+}
+
+.top-button{
+    background: #000;
+    color: #fff;
+    width: fit-content;
+    padding: 12px 24px;
+    margin-bottom: 16px;
+}
+
+footer p{
+    margin: 15px 0;
+    color: #fff
+}
+
+footer p a{
+    color: #fff;
+}
+
+footer p a:hover{
+    color: #fff;
 }
